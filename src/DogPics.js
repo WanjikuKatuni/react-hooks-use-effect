@@ -13,7 +13,9 @@ function DogPics() {
         console.log("setState");
         setImages(data.message);
       });
-  });
+        // empty array in second argument so asto remove infinite loop
+  },[]);
+  
 
   console.log("render");
 
